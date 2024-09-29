@@ -10,9 +10,8 @@ body {
 
 :root {
     --tamanho-header: 80px;
-    --tamanho-banner: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
-    --tamanho-login: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px); 
-    /* Se colocar var(--tamanho-footer)- 2px) vai dar ruim, ou se tiver sem ; tbm vai dar ruim */
+    --tamanho-banner: calc(100vh - var(--tamanho-header) - var(--tamanho-footer));
+    --tamanho-login: calc(100vh - var(--tamanho-header) - var(--tamanho-footer)); 
     --tamanho-footer: 65px;
 }
 
@@ -28,7 +27,7 @@ body {
 }
 
 .header .container{
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     height: 100%;
 }
@@ -107,7 +106,7 @@ body {
 }
 
 .box img {
-    width: 170px;
+    width: 150px;
 }
 
 
@@ -198,3 +197,6 @@ body {
     flex-direction: column;
     align-items: center;
 }   
+.social h4{
+    color:#EC155B;
+}
