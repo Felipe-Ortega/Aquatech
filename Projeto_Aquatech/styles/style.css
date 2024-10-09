@@ -17,7 +17,7 @@ body {
 
 .header {
     height: var(--tamanho-header);
-    border-bottom: 2px solid #32b9cd;
+    border-bottom: 4px solid #32b9cd;
 }
 
 .container {
@@ -34,7 +34,7 @@ body {
 
 .header a{
     text-decoration: none;
-    color: #e3b062;
+    color: white;
 }
 
 .agora{
@@ -54,11 +54,11 @@ body {
 .titulo{
     color: #32b9cd;
     width: fit-content;
-    font-weight: 630;
+    font-weight: 45x0;
 }
 
 .banner{
-    height:var(--tamanho-banner);
+    height: 35vh;
     color: white;
     background-image: url("../assets/imgs/bg-jelly-fish-para-home.png");
     background-size: cover;
@@ -90,6 +90,8 @@ body {
 }
 
 .social .container .boxes{
+    align-items: center;
+    flex-direction: column;
     display: flex;
     justify-content: space-around;
     width: 100%;
@@ -98,15 +100,18 @@ body {
 
 .box{
     display: flex;
-    flex-direction: column;
+    width: 55vw;;
+    flex-direction: row;
     align-items: center;
+
 }
 .box p {
     width: 80%;
+    text-align: center;
 }
 
 .box img {
-    width: 150px;
+    width: 180px;
 }
 
 
@@ -114,7 +119,7 @@ body {
 
 .footer{
     background-color: #32b9cd;
-    height: var(--tamanho-footer);
+    height: 20vh;
     color: #fff;
     display: flex;
     font-size: 15px;
@@ -125,8 +130,11 @@ body {
     align-items: center;
     justify-content: center;
     gap:10px;
+    
 }
-
+.footer .container span{
+    margin-bottom: 6vh;
+}
 .version{
     font-size: 12px;
 }
@@ -196,7 +204,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-}   
-.social h4{
-    color:#EC155B;
+} 
+.topicos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
